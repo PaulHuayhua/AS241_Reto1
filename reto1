@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardin del Alma</title>
+
+</head>
+    <style>
+        body{
+            background-color: rgba(92, 92, 92, 0.61);
+            margin: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+<body>
+    <h1 style="color: rgb(255, 0, 0);"><center> JARDIN DEL ALMA</center></h1>
+    <main>
+        <h2>Rosa</h2>
+        <p> La<strong> rosa </strong>es quizás una de las flores más reconocidas y <em>populares en todo el mundo</em>.
+            Con sus
+            pétalos suaves y
+            delicados, la rosa viene en una amplia gama de colores, desde el clásico rojo pasión hasta el delicado rosa,
+            el vibrante amarillo y el puro blanco. Además de su belleza visual, la rosa también es apreciada por su
+            aroma dulce y distintivo. Se ha asociado durante mucho tiempo con el amor, la pasión y el romance, lo que la
+            convierte en una opción popular para regalos románticos y ocasiones especiales como bodas y aniversarios.
+        </p>
+        <img style="width: 250px;" src="img/rosa.jpg" alt="rosas">
+
+        <h2>Lirio</h2>
+        <p>El <strong>lirio </strong>es una <em>flor elegante y majestuosa</em> que se destaca por sus tallos altos y
+            sus flores grandes y
+            llamativas. Con sus pétalos acampanados y sus colores vibrantes, como el blanco puro, el rosa suave y el
+            amarillo brillante, el lirio agrega un toque de gracia y sofisticación a cualquier arreglo floral. Además de
+            su belleza estética, el lirio también tiene un aroma distintivo y encantador. Se asocia comúnmente con la
+            pureza, la inocencia y la renovación, lo que lo convierte en una opción popular para celebrar ocasiones como
+            nacimientos, bautizos y bodas.</p>
+        <img style="width: 250px;" src="img/lirios.jpg" alt="">
+
+        <h2>Tulipan</h2>
+        <p>El <strong>tulipán </strong>es una flor primaveral encantadora conocida por su forma única y sus brillantes
+            colores. Con sus
+            tallos delgados y sus pétalos en forma de copa, el tulipán viene en una amplia variedad de tonos, desde el
+            rojo intenso y el amarillo brillante hasta el morado profundo y el blanco puro. Esta diversidad de colores y
+            formas hace que los tulipanes sean una opción versátil para arreglos florales y decoraciones. Además de su
+            belleza visual, el tulipán también es apreciado por su elegancia simple y su simbolismo de <em>amor y
+                felicidad</em>,
+            lo que lo convierte en una opción popular para una amplia gama de ocasiones, desde cumpleaños y aniversarios
+            hasta eventos formales y celebraciones de primavera.</p>
+        <img style="width: 250px;" src="img/tulipan.jpg" alt="">
+
+        <section class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kVD0ge2hyrU?si=2CFZcOwgJSUX7GoO"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section class="clases-flores">
+            <h2>Rosas</h2>
+            <ul>
+                <li>Rosa Grandiflora.</li>
+                <li>Rosal mini.</li>
+                <li>Rosal de pie.</li>
+                <li>Rosal arbustivo.</li>
+            </ul>
+
+            <h2>Lirios</h2>
+            <ul>
+                <li>Lirios blancos</li>
+                <li>Lirios amarillos</li>
+                <li>Lirios rojos</li>
+                <li>Lirios naranjas</li>
+            </ul>
+
+            <h2>Tulipanes</h2>
+            <ul>
+                <li>tulipán Princesa Irene</li>
+                <li>tulipán Angélica</li>
+                <li>tulipán Fancy Frills</li>
+            </ul>
+        </section>
+
+        <section class="form">
+            Ingresar la fecha del pedido <input type="date" name="date" id="date">
+            Cantidad de flores <input type="number" name="cant-flores" id="cant-flores">
+            Correo electronico <input type="email" name="email" id="email">
+            Lugar de envio <input type="text" name="ubi" id="ubi">
+            <input type="submit" value="Enviar">
+        </section>
+    </main>
+
+</body>
+
+</html>
