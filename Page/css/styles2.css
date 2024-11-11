@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo a {
+    color: #000000;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.nav-link ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-link ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-link ul li a:hover {
+    background-color: #c4c4c4;
+    border-radius: 4px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+}
+
+.header_text {
+    margin: 0px 40px 40px 40px;
+    background-color: black;
+    height: 95vh;
+    border-bottom-left-radius: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-toggle-checkbox{
+    display: none;
+}
+
+.header_text h1,
+.header_text p {
+    width: 60%;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 768px) {
+    /* Ocultar menú en dispositivos móviles por defecto */
+    .nav-link {
+        display: none;
+        flex-direction: column;
+        z-index: 10;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-toggle-checkbox{
+        display: none;
+    }
+
+    /* Mostrar el menú cuando el checkbox esté marcado */
+    .menu-toggle-checkbox:checked + .menu-toggle + .nav-link {
+        display: flex;
+    }
+
+    /* Mostrar el botón del menú */
+    .menu-toggle {
+        display: flex;
+        color: #000000;
+        flex-direction: column;
+    }
+}
+
+
+.footer {
+    background-color: #ffffff;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2;
+}
+
+.footer-content .section-social img {
+    width: 2.5rem;
+    margin-right: 15px;
+}
+
+.footer-content .section-links, a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+@media (max-width:480px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content .section-links, a {
+        display: inline;
+        margin-right: 15px;
+    }
+}
